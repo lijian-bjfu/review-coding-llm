@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-04-16T21:42:38.201487+08:00",
+  "params": {
+    "app": "一起来捉妖",
+    "batch": 0,
+    "stage": "inductive",
+    "source_paths": [
+      "/Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/一起来捉妖_dir/02_inductive_coding_dir/knowledge/00_base_rules.txt",
+      "/Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/一起来捉妖_dir/02_inductive_coding_dir/knowledge/02_codebook_current.md",
+      "/Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/一起来捉妖_dir/02_inductive_coding_dir/knowledge/01_rolling_rules.txt",
+      "/Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/一起来捉妖_dir/02_inductive_coding_dir/knowledge/03_focus.txt",
+      "/Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/一起来捉妖_dir/01_preprocessed_for_llm_dir/一起来捉妖_batch_00.txt"
+    ],
+    "output_type": "prompt_log"
+  },
+  "source_hash": "e0a2c039e42deee7b365c6ce1e636aa6c153924438a5b4fefa56e9cb18752d0b",
+  "script_version": "78e1199"
+}

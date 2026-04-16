@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-04-16T21:40:21.182630+08:00",
+  "params": {
+    "app": "一起来捉妖",
+    "stage": "inductive",
+    "action": "init_base_rules",
+    "source_path": "/Users/lijian/Desktop/GitHub/review-coding-llm/prompts/inductive/00_base_rules.txt"
+  },
+  "source_hash": "6a86c51797c5e4d5ee18c5da573de551f1f71061070291d68cb2cab8a0574a3c",
+  "script_version": "78e1199"
+}

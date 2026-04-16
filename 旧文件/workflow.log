@@ -1,0 +1,110 @@
+2025-06-15 20:51:43,128 - INFO - 开始执行项目设置...
+2025-06-15 20:51:43,128 - INFO - 开始执行工作流程: 模式 'SETUP' for app '金铲铲之战'
+2025-06-15 20:51:43,128 - INFO - 验证配置 (1/3)
+2025-06-15 20:51:43,129 - INFO - 创建目录结构 (2/3)
+2025-06-15 20:51:43,129 - INFO - 正在检查并按需创建项目目录...
+2025-06-15 20:51:43,129 - INFO - 已创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲之战_dir
+2025-06-15 20:51:43,129 - INFO - 已创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲之战_dir/02_deductive_coding_dir
+2025-06-15 20:51:43,129 - INFO - 已创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲之战_dir/01_inductive_coding_dir
+2025-06-15 20:51:43,129 - INFO - 已创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲之战_dir/00_rawdata_dir
+2025-06-15 20:51:43,129 - INFO - 所有必需的目录已创建完成
+2025-06-15 20:51:43,129 - INFO - 移动文件 (3/3)
+2025-06-15 20:51:43,129 - ERROR - 源数据文件不存在: /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲之战.csv
+2025-06-15 20:51:43,130 - ERROR - 工作流程 'SETUP' 执行失败
+2025-06-15 20:51:43,130 - ERROR - 工作流程执行失败
+2025-06-15 20:59:16,224 - INFO - 开始执行项目设置...
+2025-06-15 20:59:16,224 - INFO - 开始执行工作流程: 模式 'SETUP' for app '金铲铲'
+2025-06-15 20:59:16,224 - INFO - 验证配置 (1/3)
+2025-06-15 20:59:16,225 - INFO - 创建目录结构 (2/3)
+2025-06-15 20:59:16,225 - INFO - 正在检查并按需创建项目目录...
+2025-06-15 20:59:16,225 - INFO - 已创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir
+2025-06-15 20:59:16,225 - INFO - 已创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/01_inductive_coding_dir
+2025-06-15 20:59:16,225 - INFO - 已创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 20:59:16,225 - INFO - 已创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/02_deductive_coding_dir
+2025-06-15 20:59:16,225 - INFO - 所有必需的目录已创建完成
+2025-06-15 20:59:16,225 - INFO - 移动文件 (3/3)
+2025-06-15 20:59:16,225 - INFO - 确保目标目录存在: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 20:59:16,226 - INFO - 成功将数据文件从 /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲.csv 复制到 /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 20:59:16,226 - INFO - 工作流程 'SETUP' 执行成功
+2025-06-15 20:59:16,226 - INFO - 项目环境已准备就绪
+2025-06-15 20:59:16,226 - INFO - 确保文件已被移入正确位置: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 21:11:29,570 - INFO - 开始执行工作流程: 模式 'SETUP' for app '金铲铲'
+2025-06-15 21:11:29,570 - INFO - 验证配置 (1/3)
+2025-06-15 21:11:29,570 - INFO - 创建目录结构 (2/3)
+2025-06-15 21:11:29,570 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/
+2025-06-15 21:11:29,570 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/
+2025-06-15 21:11:29,570 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/01_inductive_coding_dir/
+2025-06-15 21:11:29,570 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/02_deductive_coding_dir/
+2025-06-15 21:11:29,570 - INFO - 移动文件 (3/3)
+2025-06-15 21:11:29,570 - INFO - 确保目标目录存在: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 21:11:29,571 - WARNING - 目标文件已存在，将被覆盖: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 21:11:29,571 - INFO - 成功将数据文件从 /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲.csv 复制到 /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 21:11:29,571 - INFO - 工作流程 'SETUP' 执行成功
+2025-06-15 21:11:29,571 - INFO - 项目环境已准备就绪
+2025-06-15 21:11:29,571 - INFO - 确保文件已被移入正确位置: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 21:13:47,789 - INFO - 开始执行工作流程: 模式 'SETUP' for app '金铲铲'
+2025-06-15 21:13:47,789 - INFO - 验证配置 (1/3)
+2025-06-15 21:13:47,790 - INFO - 创建目录结构 (2/3)
+2025-06-15 21:13:47,790 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/
+2025-06-15 21:13:47,790 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/
+2025-06-15 21:13:47,790 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/01_inductive_coding_dir/
+2025-06-15 21:13:47,790 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/02_deductive_coding_dir/
+2025-06-15 21:13:47,790 - INFO - 移动文件 (3/3)
+2025-06-15 21:13:47,790 - INFO - 确保目标目录存在: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 21:13:47,790 - WARNING - 目标文件已存在，将被覆盖: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 21:13:47,790 - INFO - 成功将数据文件从 /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲.csv 复制到 /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 21:13:47,790 - INFO - 处理原始数据 (4/3)
+2025-06-15 21:13:47,819 - INFO - 工作流程 'SETUP' 执行成功
+2025-06-15 21:13:47,819 - INFO - 项目环境已准备就绪
+2025-06-15 21:13:47,819 - INFO - 确保文件已被移入正确位置: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 22:06:37,402 - INFO - 开始执行工作流程: 模式 'SETUP' for app '金铲铲'
+2025-06-15 22:06:37,403 - INFO - 验证配置 (1/3)
+2025-06-15 22:06:37,403 - INFO - 创建目录结构 (2/3)
+2025-06-15 22:06:37,403 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/
+2025-06-15 22:06:37,403 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/
+2025-06-15 22:06:37,403 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/01_inductive_coding_dir/
+2025-06-15 22:06:37,403 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/02_deductive_coding_dir/
+2025-06-15 22:06:37,403 - INFO - 移动文件 (3/3)
+2025-06-15 22:06:37,404 - INFO - 确保目标目录存在: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 22:06:37,404 - WARNING - 目标文件已存在，将被覆盖: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 22:06:37,405 - INFO - 成功将数据文件从 /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲.csv 复制到 /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 22:06:37,405 - INFO - 处理原始数据 (4/3)
+2025-06-15 22:06:37,436 - INFO - 工作流程 'SETUP' 执行成功
+2025-06-15 22:06:37,436 - INFO - 项目环境已准备就绪
+2025-06-15 22:06:37,436 - INFO - 确保文件已被移入正确位置: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 22:43:13,110 - INFO - 开始程序化抽样流程 - APP_NAME: 金铲铲
+2025-06-15 22:43:13,110 - INFO - 原始数据目录: /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲_dir/00_rawdata_dir/
+2025-06-15 22:43:13,110 - INFO - 原始数据文件: /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 22:43:13,110 - INFO - 抽样数量: 100
+2025-06-15 22:43:13,110 - INFO - 最小字符长度: 40
+2025-06-15 22:43:13,110 - WARNING - 原始数据目录不存在: /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲_dir/00_rawdata_dir/
+2025-06-15 22:43:13,110 - INFO - 总计现有样本ID数量: 0
+2025-06-15 22:43:13,110 - ERROR - 抽样流程出现异常: 原始数据文件不存在: /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 22:46:26,563 - INFO - 开始执行工作流程: 模式 'SETUP' for app '金铲铲'
+2025-06-15 22:46:26,564 - INFO - 验证配置 (1/3)
+2025-06-15 22:46:26,565 - INFO - 创建目录结构 (2/3)
+2025-06-15 22:46:26,565 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/
+2025-06-15 22:46:26,565 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/
+2025-06-15 22:46:26,565 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/01_inductive_coding_dir/
+2025-06-15 22:46:26,565 - INFO - 创建目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/02_deductive_coding_dir/
+2025-06-15 22:46:26,565 - INFO - 移动文件 (3/3)
+2025-06-15 22:46:26,565 - INFO - 确保目标目录存在: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 22:46:26,565 - WARNING - 目标文件已存在，将被覆盖: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 22:46:26,566 - INFO - 成功将数据文件从 /Users/lijian/Desktop/GitHub/review-coding-llm/金铲铲.csv 复制到 /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 22:46:26,566 - INFO - 处理原始数据 (4/3)
+2025-06-15 22:46:26,590 - INFO - 工作流程 'SETUP' 执行成功
+2025-06-15 22:46:26,590 - INFO - 项目环境已准备就绪
+2025-06-15 22:46:26,590 - INFO - 确保文件已被移入正确位置: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir
+2025-06-15 22:46:34,302 - INFO - 开始程序化抽样流程 - APP_NAME: 金铲铲
+2025-06-15 22:46:34,302 - INFO - 原始数据目录: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/
+2025-06-15 22:46:34,302 - INFO - 原始数据文件: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲.csv
+2025-06-15 22:46:34,302 - INFO - 抽样数量: 100
+2025-06-15 22:46:34,302 - INFO - 最小字符长度: 40
+2025-06-15 22:46:34,302 - INFO - 找到 0 个现有样本文件: []
+2025-06-15 22:46:34,302 - INFO - 总计现有样本ID数量: 0
+2025-06-15 22:46:34,309 - INFO - 成功加载原始数据，共 1399 行
+2025-06-15 22:46:34,311 - INFO - 去除重复ID后剩余数据: 1399 行 (原有 1399 行)
+2025-06-15 22:46:34,312 - INFO - 应用字符长度过滤 (>= 40) 后剩余数据: 590 行 (过滤前 1399 行)
+2025-06-15 22:46:34,313 - INFO - 成功抽样 100 条数据
+2025-06-15 22:46:34,315 - INFO - 成功保存抽样数据到: /Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/金铲铲_dir/00_rawdata_dir/金铲铲_sample0.csv
+2025-06-15 22:46:34,316 - INFO - 抽样流程完成成功！新样本文件: 金铲铲_sample0.csv, 抽样数量: 100

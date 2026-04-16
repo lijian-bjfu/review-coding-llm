@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-04-16T21:41:00.435384+08:00",
+  "params": {
+    "app": "一起来捉妖",
+    "source_path": "/Users/lijian/Desktop/GitHub/review-coding-llm/data_dir/一起来捉妖_dir/00_rawdata_dir/一起来捉妖.csv",
+    "output_type": "sampling_log",
+    "rows": 250
+  },
+  "source_hash": "9e0b036c45b25453d801e37e927b03f0492a6d79c4e5aa212dc702a1681cdd37",
+  "script_version": "78e1199"
+}

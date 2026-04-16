@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-04-16T21:40:21.217336+08:00",
+  "params": {
+    "app": "一起来捉妖",
+    "stage": "inductive",
+    "action": "init_codebook",
+    "source_path": "/Users/lijian/Desktop/GitHub/review-coding-llm/prompts/inductive/02_codebook_current_template.md"
+  },
+  "source_hash": "b470e727d6212b1e6fe69f29cc3778d22018e789dc67d0425d96d7c7eb3722d6",
+  "script_version": "78e1199"
+}

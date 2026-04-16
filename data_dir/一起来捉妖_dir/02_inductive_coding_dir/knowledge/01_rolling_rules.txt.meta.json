@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-04-16T21:40:21.202055+08:00",
+  "params": {
+    "app": "一起来捉妖",
+    "stage": "inductive",
+    "action": "init_rolling_rules",
+    "source_path": "/Users/lijian/Desktop/GitHub/review-coding-llm/prompts/inductive/01_rolling_rules_template.txt"
+  },
+  "source_hash": "6962c8299aa904c46000d3b444e1977afb25a3e19535f094d4140f619cfd1f4f",
+  "script_version": "78e1199"
+}
