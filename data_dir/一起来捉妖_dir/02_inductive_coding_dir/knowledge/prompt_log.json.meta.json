@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-16T21:40:21.261512+08:00",
+  "generated_at": "2026-04-17T08:24:00.434681+08:00",
   "params": {
     "app": "一起来捉妖",
     "stage": "inductive",
     "action": "init_prompt_log"
   },
   "source_hash": "",
-  "script_version": "78e1199"
+  "script_version": "f6a2b0b"
 }

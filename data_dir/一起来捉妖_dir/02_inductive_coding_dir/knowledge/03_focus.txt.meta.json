@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T21:40:21.232808+08:00",
+  "generated_at": "2026-04-17T08:24:00.404386+08:00",
   "params": {
     "app": "一起来捉妖",
     "stage": "inductive",
@@ -7,5 +7,5 @@
     "source_path": "/Users/lijian/Desktop/GitHub/review-coding-llm/prompts/inductive/03_focus_template.txt"
   },
   "source_hash": "cf96dd763a2ac384743574bf81cabd2af6dc787a90a4edc8fc7d779801100a8f",
-  "script_version": "78e1199"
+  "script_version": "f6a2b0b"
 }

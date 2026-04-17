@@ -312,13 +312,20 @@ python scripts/03_merge_codings.py --app <APP_NAME> [--overwrite]
 ```
 
 **行为**：
-1. 扫描 `batches/` 下所有 `batch_NN_coding.csv`
-2. 读取并校验每个文件包含 `分类`, `检索词` 两列
-3. 合并为单一DataFrame
-4. 按 (`分类`, `检索词`) 完全一致的行去重
-5. 按 `分类` 分组排序
-6. 输出到 `codebook_merged.csv`
-7. 打印统计
+1. 扫描 `batches/` 下所有 `batch_NN_<主题名>.csv`（如 `batch_00_户外玩法影响.csv`）
+2. 按文件名中的主题名分组
+3. 每组内：读取并校验包含 `分类`, `检索词` 两列
+4. 每组内：合并为单一DataFrame
+5. 按 (`分类`, `检索词`) 完全一致的行去重
+6. 按 `分类` 分组排序
+7. 每个主题输出一个 `codebook_merged_<主题名>.csv`
+8. 打印统计（按主题分别显示编码数和引文数）
+
+**批次文件命名规范**：
+- 格式：`batch_<NN>_<主题名>.csv`
+- 批次编号 2 位零填充
+- 主题名与 LLM 输出的 `--- 主题：[主题名] ---` 分隔行中的主题名一致
+- 研究者从 LLM 输出中手动按分隔行切分保存为多个文件
 
 **宽容解析**：
 - 若第一行不是标准表头（LLM多加了前缀），尝试跳过非数据行
@@ -336,14 +343,14 @@ python scripts/04_build_dictionary.py --app <APP_NAME> [--overwrite]
 ```
 
 **行为**：
-1. 读取 `codebook_merged.csv`
-2. 按MAXQDA字典格式写Excel到 `codebook_final.xlsx`：
+1. 扫描 `codebook_merged_<主题名>.csv` 文件（可能有多个）
+2. 每个主题生成一个 `codebook_final_<主题名>.xlsx`：
    - 表头：`分类`, `检索词`
    - 两列，无索引列
-3. 打印 MAXQDA 导入指引:
-   - 生成文件的路径
+3. 打印 MAXQDA 导入指引：
+   - 各主题字典文件的路径
    - 导入方式：MAXQDA 菜单 → 词典 → 导入 → 选择 .xlsx
-   - 提示：导入前建议在 MAXQDA 建立空词典
+   - 提示：每个主题作为一本独立字典导入
 
 ### `scripts/05_saturation_check.py`
 
@@ -356,12 +363,13 @@ python scripts/05_saturation_check.py --app <APP_NAME>
 ```
 
 **行为**：
-1. 扫描 `batches/` 下所有 `batch_NN_coding.csv`，按批次排序
-2. 逐批计算：
-   - 本批唯一编码数
+1. 扫描 `batches/` 下所有 `batch_NN_<主题名>.csv`，按批次编号排序
+2. 合并同一批次下所有主题的编码（饱和度看的是全局编码池，不分主题）
+3. 逐批计算：
+   - 本批唯一编码数（跨所有主题）
    - 本批新增编码数（与之前批次的差集）
    - 最近3批的新增编码数滚动均值
-3. 输出表格+状态提示
+4. 输出表格+状态提示
 
 ## 测试
 

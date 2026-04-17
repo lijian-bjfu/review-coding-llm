@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T21:42:38.201487+08:00",
+  "generated_at": "2026-04-17T08:25:27.690489+08:00",
   "params": {
     "app": "一起来捉妖",
     "batch": 0,
@@ -13,6 +13,6 @@
     ],
     "output_type": "prompt_log"
   },
-  "source_hash": "e0a2c039e42deee7b365c6ce1e636aa6c153924438a5b4fefa56e9cb18752d0b",
-  "script_version": "78e1199"
+  "source_hash": "10d60f90eff8dc6e138e60510c9b35f73d2dafa833a4775a7ea58018c0b9b60e",
+  "script_version": "f6a2b0b"
 }

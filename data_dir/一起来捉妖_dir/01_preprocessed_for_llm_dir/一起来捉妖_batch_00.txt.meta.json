@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-16T21:41:00.317510+08:00",
+  "generated_at": "2026-04-17T08:25:10.674519+08:00",
   "params": {
     "app": "一起来捉妖",
     "batch_size": 50,
-    "n_batches": 5,
+    "n_batches": 4,
     "seed": 42,
     "min_len": 20,
     "stratify": true,
@@ -11,6 +11,6 @@
     "batch_id": 0,
     "output_type": "batch_txt"
   },
-  "source_hash": "9e0b036c45b25453d801e37e927b03f0492a6d79c4e5aa212dc702a1681cdd37",
-  "script_version": "78e1199"
+  "source_hash": "e0a4b5c175c580349735e269739a302dc3144874a46af98ca23d52d8661378f6",
+  "script_version": "f6a2b0b"
 }
