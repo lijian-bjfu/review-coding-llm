@@ -39,7 +39,7 @@ __version__ = "0.1.0"
 VSCODE_APP = "一起来捉妖"
 # 要处理的应用名，需与 00_setup_proj.py 初始化时使用的名称一致
 
-VSCODE_BATCH = 0
+VSCODE_BATCH = 3
 # 要组装 prompt 的批次编号，从 0 开始，对应 batch_00.txt、batch_01.txt……
 
 VSCODE_STAGE = "inductive"

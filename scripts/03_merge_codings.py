@@ -33,7 +33,7 @@ __version__ = "0.1.0"
 # 命令行执行时这些变量会被忽略。
 # =============================================================================
 
-VSCODE_APP = "myworld"
+VSCODE_APP = "一起来捉妖"
 # 要合并编码结果的应用名，需与初始化时使用的名称一致
 
 VSCODE_OVERWRITE = False
@@ -62,7 +62,7 @@ def main() -> None:
     args = get_args()
 
     batches_dir = get_batches_dir(args.app, "inductive")
-    coding_paths = sorted(batches_dir.glob("batch_*_coding.csv"))
+    coding_paths = sorted(batches_dir.glob("batch_*.csv"))
     if not coding_paths:
         raise FileNotFoundError(
             f"未在 {batches_dir} 找到任何 `batch_NN_coding.csv` 文件。\n"

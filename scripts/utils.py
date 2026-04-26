@@ -33,7 +33,7 @@ review = PROJECT_ROOT / "prompts"
 APP_NAME_PATTERN = re.compile(r"^[a-z0-9_\u4e00-\u9fff]+$")
 REQUIRED_RAW_COLUMNS = ["name", "rating", "review"]
 CODING_REQUIRED_COLUMNS = ["分类", "检索词"]
-BATCH_FILE_PATTERN = re.compile(r"^batch_(\d{2})_coding\.csv$")
+BATCH_FILE_PATTERN = re.compile(r"^batch_(\d{2})_.+\.csv$")
 PUNCTUATION_TO_STRIP = " \t\r\n,，.。!！?？:：;；'\"“”‘’()（）[]【】{}<>《》、…-—"
 
 

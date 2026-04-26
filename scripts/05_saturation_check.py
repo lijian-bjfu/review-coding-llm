@@ -3,7 +3,7 @@
 """检查归纳编码的饱和度。
 
 手动测试：
-1. 在 `02_inductive_coding_dir/batches/` 中准备多个 `batch_NN_coding.csv`。
+1. 在 `02_inductive_coding_dir/batches/` 中准备多个 `batch_NN.csv`。
 2. 运行 `python scripts/05_saturation_check.py --app example_app_test`。
 3. 应按批次输出饱和度表格，并给出状态建议。
 """
@@ -32,7 +32,7 @@ __version__ = "0.1.0"
 # 命令行执行时这些变量会被忽略。
 # =============================================================================
 
-VSCODE_APP = "myworld"
+VSCODE_APP = "一起来捉妖"
 # 要检查饱和度的应用名，需与初始化时使用的名称一致
 # 运行前请确保 02_inductive_coding_dir/batches/ 中已有 batch_NN_coding.csv
 
@@ -53,9 +53,13 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def batch_path_for_id(app: str, batch_id: int):
-    """返回 batch_NN_coding.csv 路径。"""
-    return get_batches_dir(app, "inductive") / f"batch_{batch_id:02d}_coding.csv"
+def get_batch_csv_paths(app: str, batch_id: int) -> list:
+    """返回某个 batch_id 下所有主题的 CSV 文件路径列表。"""
+    batches_dir = get_batches_dir(app, "inductive")
+    pattern = f"batch_{batch_id:02d}_*.csv"
+    paths = sorted(batches_dir.glob(pattern))
+    # 排除 .meta.json 等非 CSV 文件（glob 已限定 *.csv，这里是防御性检查）
+    return [p for p in paths if p.suffix == ".csv"]
 
 
 def render_float(value: float | None) -> str:
@@ -81,7 +85,7 @@ def main() -> None:
     if not completed_batches:
         raise FileNotFoundError(
             "未找到任何已完成的批次编码文件。\n"
-            "请先在 `02_inductive_coding_dir/batches/` 中保存 `batch_NN_coding.csv`。"
+            "请先在 `02_inductive_coding_dir/batches/` 中保存批次编码 CSV。"
         )
 
     seen_codes: set[str] = set()
@@ -89,17 +93,33 @@ def main() -> None:
     rows: list[dict[str, str]] = []
 
     for batch_id in completed_batches:
-        coding_df = parse_coding_csv(batch_path_for_id(args.app, batch_id))
-        batch_codes = {str(code).strip() for code in coding_df["分类"].tolist() if str(code).strip()}
+        # 读取该批次下所有主题的 CSV，合并后统计
+        csv_paths = get_batch_csv_paths(args.app, batch_id)
+        if not csv_paths:
+            print_warning(f"批次 {batch_id:02d} 未找到任何 CSV 文件，已跳过。")
+            continue
+
+        batch_codes: set[str] = set()
+        for csv_path in csv_paths:
+            coding_df = parse_coding_csv(csv_path)
+            codes = {str(code).strip() for code in coding_df["分类"].tolist() if str(code).strip()}
+            batch_codes.update(codes)
+
         new_codes = len(batch_codes - seen_codes)
         seen_codes.update(batch_codes)
         unique_codes = len(seen_codes)
         new_code_history.append(new_codes)
 
-        batch_text = get_preprocessed_batch_path(args.app, batch_id).read_text(encoding="utf-8")
-        data_count = count_batch_entries(batch_text)
+        # 统计该批次的数据量
+        try:
+            batch_text = get_preprocessed_batch_path(args.app, batch_id).read_text(encoding="utf-8")
+            data_count = count_batch_entries(batch_text)
+        except FileNotFoundError:
+            data_count = 0
+            print_warning(f"批次 {batch_id:02d} 的原始 txt 文件未找到，数据量显示为 0。")
+
         if data_count == 0:
-            print_warning(f"批次 {batch_id:02d} 的 txt 文件未统计到任何记录，新增率将显示为 0。")
+            print_warning(f"批次 {batch_id:02d} 未统计到任何记录，新增率将显示为 0。")
         new_rate = (new_codes / data_count * 100) if data_count else 0.0
         rolling_avg = mean(new_code_history[-3:]) if len(new_code_history) >= 3 else None
 
@@ -113,6 +133,10 @@ def main() -> None:
                 "滚动均值(3批)": render_float(rolling_avg),
             }
         )
+
+    if not rows:
+        print("未能解析任何批次数据。")
+        return
 
     headers = ["批次", "总编码数", "新增", "数据量", "新增率", "滚动均值(3批)"]
     widths = {header: max(len(header), *(len(row[header]) for row in rows)) for header in headers}
